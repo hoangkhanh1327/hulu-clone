@@ -1,0 +1,105 @@
+@import '../mixins/animations';
+
+.welcome {
+    height: 800px;
+    position: relative;
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url('../img/live-sports.jpg') no-repeat center center / cover;
+    &__content {
+        position: absolute;
+        top: 160px;
+        left: 100px;
+        max-width: 550px;
+
+        .tab-controls {
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+            margin-bottom: 10px;
+
+            .tab-btn {
+                font-size: 12px;
+                font-weight: bold;
+                text-transform: uppercase;
+                background: transparent;
+                border: none;
+                color: #fff;
+                cursor: pointer;
+                position: relative;
+
+                &.active ::after {
+                    content: "";
+                    position: absolute;
+                    bottom: -15px;
+                    left: 0;
+                    right: 0;
+                    height: 6px;
+                    background: #fff;
+                    animation: fadeRight 0.5s linear;
+                }
+            }
+        }
+
+        .tab-content {
+            .tab {
+                animation: fadeUp 1s ease-in-out;
+                display: block;
+
+                .logos {
+                    width: 350px;
+                    margin-top: 40px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+
+                    img {
+                        width: 40px;
+                    }
+
+                    &>div {
+                        background: url('../img/network-logo-bg.png') no-repeat center center / cover;
+                        height: 60px;
+                        width: 60px;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                    }
+                }
+
+                &.inactive {
+                    height: 0;
+                    overflow: hidden;
+                    display: none;
+                }
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .welcome {
+        background: linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url('../img/live-sports-small.jpg') no-repeat center center / cover;
+
+        &__content {
+            top: 0;
+            left: 20px;
+            right: 20px;
+            margin-top: 60px;
+
+            .tab-controls {
+                margin-bottom: 40px;
+                .tab-btn {
+                    &.active ::after {
+                        content: "";
+                        position: absolute;
+                        bottom: -15px;
+                        left: 0;
+                        right: 0;
+                        height: 10px;
+                        background: #fff;
+                        animation: fadeRight 0.5s linear;
+                    }
+                }
+            }
+        }
+    }
+}
