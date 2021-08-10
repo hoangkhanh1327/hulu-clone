@@ -1,0 +1,62 @@
+@import '../mixins/animations';
+
+
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 3;
+    background: rgba(0, 0, 0, 0.45);
+
+    .modal-box {
+        margin: 10% auto;
+        width: 400px;
+        background: #fff;
+        color: #000;
+        position: relative;
+        animation: showModal 1s;
+
+        .modal-body {
+            padding: 50px;
+            h3 {
+                font-weight: bold;
+            }
+
+            button {
+                width: 100%;
+                margin-top: 30px;
+            }
+        }
+
+        .close {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            height: 23px;
+            width: 23px;
+            cursor: pointer;
+        }
+
+        .modal-footer {
+            background: #f7f7f9;
+            color: #333;
+            padding: 20px 0;
+            border-top: #eee 1px solid;
+            text-align: center;
+            a {
+                color: steelblue;
+            }
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .modal {
+        .modal-box {
+            width: 350px;
+        }
+    }   
+}

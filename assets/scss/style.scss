@@ -1,0 +1,24 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+html, 
+body {
+    font-family: 'Rubik', sans-serif;
+    background-color: #000;
+    color: #fff;
+    line-height: 1.7;
+    overflow-x: hidden;
+    scroll-behavior: smooth
+}
+
+@import './mixins/base';
+@import './mixins/buttons';
+@import './mixins/text';
+@import './mixins/form';
+
+@import './sections/header.scss';
+@import './sections/sub_header.scss';
+@import './sections/categories.scss';
+@import './sections/live.scss';
+@import './sections/live_sports.scss';
+@import './sections/footer.scss';
+@import './sections/modal.scss';

@@ -1,0 +1,36 @@
+.btn {
+    display: inline-block;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    min-width: 135px;
+    padding: 20px 32px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 15px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    &--cta {
+        background: #fff;
+        color: #000;
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+
+    &--outline {
+        color: #fff;
+        border: 2px solid #fff;
+
+        &:hover {
+            border-color: #ccc;
+        }
+    }
+
+    &--dark {
+        color: #fff;
+        background: #000;
+    }
+}

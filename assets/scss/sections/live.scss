@@ -1,0 +1,45 @@
+@import '../mixins/animations';
+
+.live {
+    background-color: #151516;
+    padding: 40px;
+
+    &__border {
+        border: 4px solid #1ce783;
+        border-radius: 16px;
+        padding: 100px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        
+        &>a {
+            text-transform: uppercase;
+            font-size: 18px;
+            margin-top: 20px;
+            text-decoration: underline;
+        }
+
+        .down-arrow {
+            background: url('../img/dropdown_arrow.svg') no-repeat center;
+            height: 16px;
+            margin-top: 55px;
+            cursor: pointer;
+            width: 18px;
+            padding: 0;
+            border: none;
+            text-align: center;
+            justify-content: center;
+            display: flex;
+            animation: move-up-and-down ease-in-out 1.5s infinite alternate;
+        }
+    }
+}
+
+@media (max-width: 768px) {
+    .live {
+        &__border {
+            padding: 30px 10px;
+        }
+    }
+}
