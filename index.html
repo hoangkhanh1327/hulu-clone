@@ -1,303 +1,402 @@
 <!DOCTYPE html>
 <html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Stream TV and Movies Live and Online | Hulu</title>
+        <link rel="stylesheet" href="./assets/css/style.css" />
+    </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Stream TV and Movies Live and Online | Hulu</title>
-    <link rel="stylesheet" href="./assets/css/style.css">
-</head>
+    <body>
+        <!-- Header Section -->
+        <header class="header">
+            <!-- Navbar -->
+            <nav>
+                <ul>
+                    <li>
+                        <button class="btn login-btn">Log In</button>
+                    </li>
+                </ul>
+            </nav>
 
-<body>
-    <header class="header">
-        <nav>
-            <ul>
-                <li>
-                    <button class="btn login-btn">Log In</button>
-                </li>
-            </ul>
-        </nav>
-
-        <div class="header__content">
-            <h4 class="primary-title">Try up to one month free</h4>
-            <img src="./assets/img/logo.png" alt="Hulu" class="logo" />
-            <div class="header__text-1">Watch thousands of TV shows and movies</div>
-            <div class="header__text-2">HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as add-ons.</div>
-            <button class="btn btn--cta">Start Your Free Trial</button>
-            <div class="legal-text">Free trial for new & eligible returning subscribers only.</div>
-        </div>
-    </header>
-
-    <section class="sub-header">
-        <img src="./assets/img/logos.png" alt="">
-        <div>
-            <h4 class="primary-title">Bundle with any Hulu plan & Save</h4>
-            <h3>Get Hulu, Disney+, and ESPN+.</h3>
-            <a href="#" class="sub-link">Details</a>
-        </div>
-        <div>
-            <a href="#" class="btn btn--outline">Get Bundle</a>
-            <a href="#" class="sub-link">Terms apply</a>
-        </div>
-    </section>
-
-    <section class="categories">
-        <h4 class="primary-title">INCLUDED IN ALL PLANS</h4>
-        <div class="text-xl">All The TV You Love</div>
-        <div class="sub-text">Stream full seasons of exclusive series, current-season episodes, hit movies, Hulu
-            Originals, kids shows, and more.</div>
-
-        <div class="covers">
-            <div class="cover-1">
-                <div class="cover__overlay"></div>
-                <div class="cover__content">
-                    <div class="cover__title">Past & Current Sessions</div>
-                    <h3>TV Shows</h3>
+            <div class="header__content">
+                <h4 class="primary-title">Try up to one month free</h4>
+                <img src="./assets/img/logo.png" alt="Hulu" class="logo" />
+                <div class="header__text-1">
+                    Watch thousands of TV shows and movies
+                </div>
+                <div class="header__text-2">
+                    HBO Max™, SHOWTIME®, CINEMAX® and STARZ® available as
+                    add-ons.
+                </div>
+                <button class="btn btn--cta">Start Your Free Trial</button>
+                <div class="legal-text">
+                    Free trial for new & eligible returning subscribers only.
                 </div>
             </div>
-            <div class="cover-2">
-                <div class="cover__overlay"></div>
-                <div class="cover__content">
-                    <div class="cover__title">New & Classic</div>
-                    <h3>Movies</h3>
-                </div>
-            </div>
-            <div class="cover-3">
-                <div class="cover__overlay"></div>
-                <div class="cover__content">
-                    <div class="cover__title">Groundbreaking</div>
-                    <h3>Hulu Originals</h3>
-                </div>
-            </div>
-            <div class="cover-4">
-                <div class="cover__overlay"></div>
-                <div class="cover__content">
-                    <div class="cover__title">Add-on</div>
-                    <h3>Premiums</h3>
-                </div>
-            </div>
-        </div>
-    </section>
+        </header>
 
-    <section class="live">
-        <div class="live__border">
-            <h4 class="primary-title">Hulu + Live TV</h4>
-            <div class="text-xl">Live TV Makes It Better</div>
-            <div class="sub-text">Make the switch from cable. Get 75+ top channels with your favorite live sports, news,
-                and events - plus the entire Hulu streaming library.</div>
-            <div class="legal-text">Live TV plan required. Regional restrictions, blackouts and additional terms apply.
-                <a href="">See details</a>
+        <section class="sub-header">
+            <img src="./assets/img/logos.png" alt="" />
+            <div>
+                <h4 class="primary-title">Bundle with any Hulu plan & Save</h4>
+                <h3>Get Hulu, Disney+, and ESPN+.</h3>
+                <a href="#" class="sub-link">Details</a>
             </div>
-            <a href="#">VIEW CHANNELS IN YOUR AREA →</a>
-            <button type="button" class="down-arrow" role="button" aria-label="dropdown"
-                onClick="document.getElementById('live-sports').scrollIntoView();">&nbsp;</button>
-        </div>
-    </section>
+            <div>
+                <a href="#" class="btn btn--outline">Get Bundle</a>
+                <a href="#" class="sub-link">Terms apply</a>
+            </div>
+        </section>
 
-    <section class="welcome" id="welcome">
-        <div class="welcome__content">
-            <div class="tab-controls">
-                <button role="button" type="button" class="tab-btn active" data-target="live-sport" data-bg="0">
-                    <span>Live Sport</span>
+        <section class="categories">
+            <h4 class="primary-title">INCLUDED IN ALL PLANS</h4>
+            <div class="text-xl">All The TV You Love</div>
+            <div class="sub-text">
+                Stream full seasons of exclusive series, current-season
+                episodes, hit movies, Hulu Originals, kids shows, and more.
+            </div>
+
+            <div class="covers">
+                <div class="cover-1">
+                    <div class="cover__overlay"></div>
+                    <div class="cover__content">
+                        <div class="cover__title">Past & Current Sessions</div>
+                        <h3>TV Shows</h3>
+                    </div>
+                </div>
+                <div class="cover-2">
+                    <div class="cover__overlay"></div>
+                    <div class="cover__content">
+                        <div class="cover__title">New & Classic</div>
+                        <h3>Movies</h3>
+                    </div>
+                </div>
+                <div class="cover-3">
+                    <div class="cover__overlay"></div>
+                    <div class="cover__content">
+                        <div class="cover__title">Groundbreaking</div>
+                        <h3>Hulu Originals</h3>
+                    </div>
+                </div>
+                <div class="cover-4">
+                    <div class="cover__overlay"></div>
+                    <div class="cover__content">
+                        <div class="cover__title">Add-on</div>
+                        <h3>Premiums</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="live">
+            <div class="live__border">
+                <h4 class="primary-title">Hulu + Live TV</h4>
+                <div class="text-xl">Live TV Makes It Better</div>
+                <div class="sub-text">
+                    Make the switch from cable. Get 75+ top channels with your
+                    favorite live sports, news, and events - plus the entire
+                    Hulu streaming library.
+                </div>
+                <div class="legal-text">
+                    Live TV plan required. Regional restrictions, blackouts and
+                    additional terms apply.
+                    <a href="">See details</a>
+                </div>
+                <a href="#">VIEW CHANNELS IN YOUR AREA →</a>
+                <button
+                    type="button"
+                    class="down-arrow"
+                    role="button"
+                    aria-label="dropdown"
+                    onClick="document.getElementById('live-sports').scrollIntoView();"
+                >
+                    &nbsp;
                 </button>
-                <button role="button" type="button" class="tab-btn" data-target="breaking-news" data-bg="1">
-                    <span>Breaking News</span>
-                </button>
-                <button role="button" type="button" class="tab-btn" data-target="biggest-events" data-bg="2">
-                    <span>Biggest Events</span>
-                </button>
             </div>
-            <!-- Features Tab -->
-            <div class="tab-content">
-                <div id="live-sport" class="tab">
-                    <div class="text-xl">Live Sports</div>
-                    <div class="sub-text">Catch your games at home or on the go. Stream live games from major
-                        college
-                        and
-                        pro
-                        leagues including the NCAA®, NBA, NHL, NFL, and more.</div>
-                    <div class="logos">
-                        <div>
-                            <img src="./assets/img/live-sports-logo-1.png" alt="">
+        </section>
+
+        <section class="welcome" id="welcome">
+            <div class="welcome__content">
+                <div class="tab-controls">
+                    <button
+                        role="button"
+                        type="button"
+                        class="tab-btn active"
+                        data-target="live-sport"
+                        data-bg="0"
+                    >
+                        <span>Live Sport</span>
+                    </button>
+                    <button
+                        role="button"
+                        type="button"
+                        class="tab-btn"
+                        data-target="breaking-news"
+                        data-bg="1"
+                    >
+                        <span>Breaking News</span>
+                    </button>
+                    <button
+                        role="button"
+                        type="button"
+                        class="tab-btn"
+                        data-target="biggest-events"
+                        data-bg="2"
+                    >
+                        <span>Biggest Events</span>
+                    </button>
+                </div>
+                <!-- Features Tab -->
+                <div class="tab-content">
+                    <div id="live-sport" class="tab">
+                        <div class="text-xl">Live Sports</div>
+                        <div class="sub-text">
+                            Catch your games at home or on the go. Stream live
+                            games from major college and pro leagues including
+                            the NCAA®, NBA, NHL, NFL, and more.
                         </div>
-                        <div>
-                            <img src="./assets/img/live-sports-logo-2.png" alt="">
+                        <div class="logos">
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-3.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-4.png"
+                                    alt=""
+                                />
+                            </div>
                         </div>
-                        <div>
-                            <img src="./assets/img/live-sports-logo-3.svg" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/img/live-sports-logo-4.png" alt="">
+                        <div class="legal-text">
+                            Live TV plan required. Regional restrictions,
+                            blackouts and additional terms apply.
+                            <a href="">See details</a>
                         </div>
                     </div>
-                    <div class="legal-text">
-                        Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a
-                            href="">See
-                            details</a>
+                    <div id="breaking-news" class="tab inactive">
+                        <div class="text-xl">Breaking News</div>
+                        <div class="sub-text">
+                            Keep pace with what's going on locally and globally
+                            with trusted opinions from all the top news
+                            networks.
+                        </div>
+                        <div class="logos">
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-3.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-4.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="legal-text">
+                            Live TV plan required. Regional restrictions,
+                            blackouts and additional terms apply.
+                            <a href="">See details</a>
+                        </div>
+                    </div>
+                    <div id="biggest-events" class="tab inactive">
+                        <div class="text-xl">Biggest Events</div>
+                        <div class="sub-text">
+                            Spectacular, can't-miss moments like the Olympics,
+                            Grammys®, Oscars®, Emmys®, and more.
+                        </div>
+                        <div class="logos">
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-1.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-2.png"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-3.svg"
+                                    alt=""
+                                />
+                            </div>
+                            <div>
+                                <img
+                                    src="./assets/img/live-sports-logo-4.png"
+                                    alt=""
+                                />
+                            </div>
+                        </div>
+                        <div class="legal-text">
+                            Live TV plan required. Regional restrictions,
+                            blackouts and additional terms apply.
+                            <a href="">See details</a>
+                        </div>
                     </div>
                 </div>
-                <div id="breaking-news" class="tab inactive">
-                    <div class="text-xl">Breaking News</div>
-                    <div class="sub-text">Keep pace with what's going on locally and globally with trusted opinions from
-                        all the top news networks.</div>
-                    <div class="logos">
-                        <div>
-                            <img src="./assets/img/live-sports-logo-1.png" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/img/live-sports-logo-2.png" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/img/live-sports-logo-3.svg" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/img/live-sports-logo-4.png" alt="">
-                        </div>
+            </div>
+        </section>
+
+        <!-- Footer Section -->
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="footer-lists">
+                    <ul>
+                        <li class="list-head">Browse</li>
+                        <li><a href="#">Streaming Library</a></li>
+                        <li><a href="#">Live TV</a></li>
+                        <li><a href="#">Live News</a></li>
+                        <li><a href="#">Live Sports</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list-head">&nbsp;</li>
+                        <li><a href="#">TV Shows</a></li>
+                        <li><a href="#">Movies</a></li>
+                        <li><a href="#">Originals</a></li>
+                        <li><a href="#">Networks</a></li>
+                        <li><a href="#">Kids</a></li>
+                        <li><a href="#">FX on Hulu</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list-head">&nbsp;</li>
+                        <li><a href="#">HBO Max™</a></li>
+                        <li><a href="#">Cinemax</a></li>
+                        <li><a href="#">Showtime</a></li>
+                        <li><a href="#">STARZ</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list-head">&nbsp;</li>
+                        <li><a href="#">Hulu, Disney+, and ESPN+</a></li>
+                        <li>
+                            <a href="#">Disney bundle with Hulu (No Ads)</a>
+                        </li>
+                        <li>
+                            <a href="#">Disney bundle with Hulu + Live TV</a>
+                        </li>
+                        <li><a href="#">Student Discount</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list-head">HELP</li>
+                        <li><a href="#">Account & Billing</a></li>
+                        <li><a href="#">Plans & Pricing</a></li>
+                        <li><a href="#">Supported Devices</a></li>
+                        <li><a href="#">Accessibility</a></li>
+                    </ul>
+                    <ul>
+                        <li class="list-head">ABOUT US</li>
+                        <li><a href="#">Press</a></li>
+                        <li><a href="#">Jobs</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="devider"></div>
+                <div class="footer-links">
+                    <div class="social-icons">
+                        <a href="#"
+                            ><img src="./assets/img/facebook.svg" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="./assets/img/twitter.svg" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="./assets/img/youtube.svg" alt=""
+                        /></a>
+                        <a href="#"
+                            ><img src="./assets/img/instagram.svg" alt=""
+                        /></a>
                     </div>
-                    <div class="legal-text">
-                        Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a
-                            href="">See
-                            details</a>
+                    <div class="footer-links--right">
+                        <span>© 2021 Hulu, LLC</span>
+                        <span>
+                            <a href="#">About Ads</a>
+                        </span>
+                        <span>
+                            <a href="#">Terms of Use</a>
+                        </span>
+                        <span>
+                            <a href="#">Privacy Policy</a>
+                        </span>
+                        <span>
+                            <a href="#">Do Not Sell My Personal Information</a>
+                        </span>
+                        <span>
+                            <a href="#">Your California Privacy Rights</a>
+                        </span>
+                        <span>
+                            <a href="#">TV Parental Guidelines</a>
+                        </span>
+                        <span>
+                            <a href="#">Sitemap</a>
+                        </span>
                     </div>
                 </div>
-                <div id="biggest-events" class="tab inactive">
-                    <div class="text-xl">Biggest Events</div>
-                    <div class="sub-text">Spectacular, can't-miss moments like the Olympics, Grammys®, Oscars®, Emmys®,
-                        and more.</div>
-                    <div class="logos">
-                        <div>
-                            <img src="./assets/img/live-sports-logo-1.png" alt="">
+            </div>
+        </footer>
+
+        <!-- Login Modal -->
+        <div class="modal">
+            <div class="modal-box">
+                <div class="modal-body">
+                    <h3>Login</h3>
+                    <form action="" class="form">
+                        <div class="form-control">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" />
                         </div>
-                        <div>
-                            <img src="./assets/img/live-sports-logo-2.png" alt="">
+                        <div class="form-control">
+                            <label for="password">Password</label>
+                            <input
+                                type="password"
+                                name="password"
+                                id="password"
+                            />
                         </div>
-                        <div>
-                            <img src="./assets/img/live-sports-logo-3.svg" alt="">
-                        </div>
-                        <div>
-                            <img src="./assets/img/live-sports-logo-4.png" alt="">
-                        </div>
-                    </div>
-                    <div class="legal-text">
-                        Live TV plan required. Regional restrictions, blackouts and additional terms apply. <a
-                            href="">See
-                            details</a>
-                    </div>
+                        <p><a href="#">Forgot your email or password</a></p>
+                        <button class="btn btn--dark">Log In</button>
+                    </form>
                 </div>
+                <div class="modal-footer">
+                    <p>
+                        Dont have an account?
+                        <a href="#">Start Your Free Trial</a>
+                    </p>
+                </div>
+                <img src="./assets/img/close.svg" alt="close" class="close" />
             </div>
         </div>
-    </section>
-
-    <!-- Footer Section -->
-    <footer class="footer">
-        <div class="footer-container">
-            <div class="footer-lists">
-                <ul>
-                    <li class="list-head">Browse</li>
-                    <li><a href="#">Streaming Library</a></li>
-                    <li><a href="#">Live TV</a></li>
-                    <li><a href="#">Live News</a></li>
-                    <li><a href="#">Live Sports</a></li>
-                </ul>
-                <ul>
-                    <li class="list-head">&nbsp;</li>
-                    <li><a href="#">TV Shows</a></li>
-                    <li><a href="#">Movies</a></li>
-                    <li><a href="#">Originals</a></li>
-                    <li><a href="#">Networks</a></li>
-                    <li><a href="#">Kids</a></li>
-                    <li><a href="#">FX on Hulu</a></li>
-                </ul>
-                <ul>
-                    <li class="list-head">&nbsp;</li>
-                    <li><a href="#">HBO Max™</a></li>
-                    <li><a href="#">Cinemax</a></li>
-                    <li><a href="#">Showtime</a></li>
-                    <li><a href="#">STARZ</a></li>
-                </ul>
-                <ul>
-                    <li class="list-head">&nbsp;</li>
-                    <li><a href="#">Hulu, Disney+, and ESPN+</a></li>
-                    <li><a href="#">Disney bundle with Hulu (No Ads)</a></li>
-                    <li><a href="#">Disney bundle with Hulu + Live TV</a></li>
-                    <li><a href="#">Student Discount</a></li>
-                </ul>
-                <ul>
-                    <li class="list-head">HELP</li>
-                    <li><a href="#">Account & Billing</a></li>
-                    <li><a href="#">Plans & Pricing</a></li>
-                    <li><a href="#">Supported Devices</a></li>
-                    <li><a href="#">Accessibility</a></li>
-                </ul>
-                <ul>
-                    <li class="list-head">ABOUT US</li>
-                    <li><a href="#">Press</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Contact</a></li>
-                </ul>
-            </div>
-            <div class="devider"></div>
-            <div class="footer-links">
-                <div class="social-icons">
-                    <a href="#"><img src="./assets/img/facebook.svg" alt=""></a>
-                    <a href="#"><img src="./assets/img/twitter.svg" alt=""></a>
-                    <a href="#"><img src="./assets/img/youtube.svg" alt=""></a>
-                    <a href="#"><img src="./assets/img/instagram.svg" alt=""></a>
-                </div>
-                <div class="footer-links--right">
-                    <span>© 2021 Hulu, LLC</span>
-                    <span>
-                        <a href="#">About Ads</a>
-                    </span>
-                    <span>
-                        <a href="#">Terms of Use</a>
-                    </span>
-                    <span>
-                        <a href="#">Privacy Policy</a>
-                    </span>
-                    <span>
-                        <a href="#">Do Not Sell My Personal Information</a>
-                    </span>
-                    <span>
-                        <a href="#">Your California Privacy Rights</a>
-                    </span>
-                    <span>
-                        <a href="#">TV Parental Guidelines</a>
-                    </span>
-                    <span>
-                        <a href="#">Sitemap</a>
-                    </span>
-                </div>
-            </div>
-        </div>
-    </footer>
-
-    <!-- Login Modal -->
-    <div class="modal">
-        <div class="modal-box">
-            <div class="modal-body">
-                <h3>Login</h3>
-                <form action="" class="form">
-                    <div class="form-control">
-                        <label for="email">Email</label>
-                        <input type="email" name="email" id="email" />
-                    </div>
-                    <div class="form-control">
-                        <label for="password">Password</label>
-                        <input type="password" name="password" id="password" />
-                    </div>
-                    <p><a href="#">Forgot your email or password</a></p>
-                    <button class="btn btn--dark">Log In</button>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <p>Dont have an account? <a href="#">Start Your Free Trial</a></p>
-            </div>
-            <img src="./assets/img/close.svg" alt="close" class="close">
-        </div>
-    </div>
-    <script src="./assets/js/script.js"></script>
-</body>
-
+        <script src="./assets/js/script.js"></script>
+    </body>
 </html>
