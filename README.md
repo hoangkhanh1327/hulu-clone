@@ -1,5 +1,3 @@
-# hulu-clone
-clone static homepage of Hulu website
+Clone Hulu's Landing Page.
 
-This project use:
-HTML, CSS (with SASS to manage) and JS
+Use: HTML5, CSS, JS

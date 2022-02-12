@@ -9,29 +9,38 @@ const welcome = document.getElementById('welcome');
 const bgUrls = [
     'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(./assets/img/live-sports.jpg)',
     'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(./assets/img/breaking-news.jpg)',
-    'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(./assets/img/biggest-event.jpg)'
+    'linear-gradient(90deg, rgba(0, 0, 0, 0.8) -57.5%, rgba(0, 0, 0, 0) 98.72%), url(./assets/img/biggest-event.jpg)',
 ];
 
 const mobileBgUrls = [
     'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(./assets/img/live-sports-small.jpg)',
     'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(./assets/img/breaking-news-small.jpg)',
-    'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(./assets/img/biggest-event-small.jpg)'
+    'linear-gradient(rgba(0, 0, 0, 0.8) -39.59%, rgba(0, 0, 0, 0) 117.14%), url(./assets/img/biggest-event-small.jpg)',
 ];
 
+// Handle Login Modal
 const openModal = () => {
     modal.style.display = 'block';
-}
+};
 
 const closeModal = () => {
     modal.style.display = 'none';
-}
+};
 
 const outsideClick = (e) => {
     if (e.target == modal) {
         closeModal();
     }
-}
+};
 
+loginBtn.addEventListener('click', openModal);
+
+closeBtn.addEventListener('click', closeModal);
+
+window.addEventListener('click', outsideClick);
+
+
+// Handle Features Tabs
 const changeBgImg = (bgId) => {
     let screenWidth = window.screen.width;
 
@@ -40,28 +49,21 @@ const changeBgImg = (bgId) => {
     } else {
         welcome.style.backgroundImage = mobileBgUrls[bgId];
     }
+};
 
-}
-
-const toogleTab = (tabId) => {
+const toggleTab = (tabId) => {
     let tab = document.getElementById(tabId);
     tabs.forEach((tab) => tab.classList.add('inactive'));
     tab.classList.remove('inactive');
-}
-
-loginBtn.addEventListener('click', openModal);
-
-closeBtn.addEventListener('click', closeModal);
-
-window.addEventListener('click', outsideClick);
+};
 
 tabBtns.forEach((btn) => {
     const tabId = btn.getAttribute('data-target');
     const bgId = btn.getAttribute('data-bg');
     btn.addEventListener('click', () => {
-        tabBtns.forEach(btn => btn.classList.remove('active'));
+        tabBtns.forEach((btn) => btn.classList.remove('active'));
         btn.classList.add('active');
-        toogleTab(tabId);
+        toggleTab(tabId);
         changeBgImg(bgId);
-    })
+    });
 });
